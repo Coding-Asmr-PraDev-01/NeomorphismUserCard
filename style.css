@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');  
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-bg-color: #ebf5fc;
+    --user-card-color: #e4edfc;
+    --color-white-al-1: rgba(255, 255, 255, 1);
+    --color-black-al-01: rgba(0, 0, 0, 0.1);
+    --icon-color: #6a9bd8;
+    --text-color: #757e8d;
+}
+
+body{
+    background-color: var(--body-bg-color);
+    font-family: 'Poppins', sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    color: var(--text-color);
+}
+
+.container .userProfileBx{
+    background: var(--body-bg-color);
+    box-shadow: -2px -2px 5px var(--color-white-al-1),
+              3px 3px 5px var(--color-black-al-01);
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.userProfileBx .header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.userProfileBx .userCard .userImgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--body-bg-color);
+    box-shadow: -2px -2px 5px var(--color-white-al-1),
+              3px 3px 5px var(--color-black-al-01);
+}
+
+.userProfileBx .userCard .userImgBx img{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-black-al-01);
+}
+
+.userProfileBx .userCard .contentBx .userInfo .username{
+    color: var(--text-color);
+    margin: 0.3rem 0;
+}
+
+.userProfileBx .userCard .contentBx .userInfo p{
+    color: var(--text-color);
+    font-size: 0.7rem;
+}
+
+.userProfileBx .userCard .contentBx .userInfo .text{
+    font-size: 0.5rem;
+}
+
+.userProfileBx .userCard .contentBx .userInfo .socialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.userProfileBx .userCard .contentBx{
+    text-align: center;
+}
+
+.iconBx{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--body-bg-color);
+    box-shadow: -2px -2px 5px var(--color-white-al-1),
+              3px 3px 5px var(--color-black-al-01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.iconBx:hover{
+    box-shadow: inset -2px -2px 5px var(--color-white-al-1),
+    inset 3px 3px 5px var(--color-black-al-01);
+}
+
+.icon{
+    font-size: 1.3rem;
+    fill: var(--icon-color);
+}
+
+.socialNumbersBx{
+    margin-top: 3rem;
+}
+
+.socialNumbersBx .wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.socialNumbersBx .wrapper p{
+    font-size: 0.6rem;
+}
+
+.socialNumbersBx .wrapper .leftBx, .rightBx{
+    display: flex;
+    align-items: center;
+    flex: 0 0 40%;
+    gap: 1rem;
+    box-shadow: inset -2px -2px 5px var(--color-white-al-1),
+    inset 3px 3px 5px var(--color-black-al-01);
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
